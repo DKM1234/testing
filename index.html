@@ -1,35 +1,991 @@
-<html lang="en">
 
+
+<!doctype html>
+<html lang="en-us">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <title>iHOMCARE | Best Caregiver Agency</title>
+    <meta name="google-site-verification" content="UvBjcCAADgUh9fA5QctQWPj3K76r5GvwoNF0y6URx_w" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="keywords" content="Home nursing services, Nurse for home, Home care services for the elderly, Private caregiver for hire, Find a physiotherapist, Caregiver agency, Senior home care services, Ambulance service, Newborn baby care, patient care agency">
+    <meta name="keyphrase" content="" />
+    <meta name="description" content="iHomcare is aimed to provide the best home nursing services for elderly, baby, patient and adults. Private caregiver for hire available just at one click. Install iHomcare app now!">
+    <link rel="shortcut icon" href="./src/img-logo/fav.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/slice.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138956556-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-138956556-1');
+    </script>
+    <meta name="msvalidate.01" content="876CBFA47538DB7F1FA7041916BCE125" />
+    <style type="text/css">
+        .dropdown-menu li{
+            padding: 5px 10px !important; 
+            /*font-size: 16px;*/
+            border-bottom: 1px solid #efebeb8f;
+        }
+        .dropdown-menu li a{
+            color: black;
+            padding: 5px !important;
+        }
+
+        /*
+        .dropdown-menu li span{
+            color: red;
+        }*/
+        /*=============*/
+        .dropdown-submenu {
+          position: relative;
+          > a::after {
+            display: block;
+            content: "";
+            float: right;
+            width: 0;
+            height: 0;
+            border-color: transparent;
+            border-style: solid;
+            border-width: 4px 0 4px 4px;
+            border-left-color: #000;
+            margin-top: 6px;
+            margin-right: -10px;
+          }
+          > ul.dropdown-menu {
+            position: absolute;
+            left: 100%;
+            top: 0;
+            margin-left: 5px;
+          }
+
+        }
+        .navbar-brand{
+            padding:0px 20px !important;
+        }
+        .navbar-default .navbar-nav>li>a{
+            color: black;
+        }
+        .navbar-default .navbar-nav>li>a:hover{
+            color: #8EC44A;
+        }
+        .dropdown-menu>li>a:hover{
+            color: #8EC44A;
+        }
+    </style>
+    <script>
+        jQuery(document).ready(function($){
+          $('li.dropdown-submenu a[data-toggle="dropdown"]').on('click', function(event) {
+            event.preventDefault();
+            event.stopPropagation();
+            $('li.dropdown-submenu').not($(this).parent()).removeClass('open');
+            $(this).parent().toggleClass('open');
+          });
+        });
+    </script>
 </head>
+<body class="body-top-padding">
 
-<body>
-    <nav>
-        <ul class="nav justify-content-center bg-success">
-            <li class="nav-item">
-              <a class="nav-link active"  href="./index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./Other.html">Other</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./Contact.html">Contact</a>
-            </li>
-          </ul>
-    </nav>
-    <div>
-        <h2 style="text-align: center; color: pink; justify-content: center;">Webside host</h2>
-        <h2 style="text-align: center; color: green; justify-content: center;">Home Page</h2>
+<header class="care-header sticky">   <!--header-->
+    <!-- Top green header -->
+    <div class="primary-header">
+        <div class="max-width">
+            <div class="pull-left">
+
+            </div>
+            <div class="pull-right">
+                <div class="primary-links">
+                    <div class="link-wrapper ">
+                        <a href="mailto:info@syzygycare.com" >
+                    	<span >
+                            <img src="./src/img-logo/other/email.png" class="head-img">
+                        </span>
+                        </a>
+                    </div>
+                    <div class="link-wrapper">
+                    	<a target="_blank" href="https://www.syzygycare.com/careApp/welcome/msgToCustomerWhatsup/917024262622">
+                        <img src="./src/img-logo/other/whatsapp.png"width="20" class="head-img">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-   
-</body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-    crossorigin="anonymous"></script>
+    <div class="clearfix"></div>
+    <nav class="navbar navbar-default">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="https://www.syzygycare.com/">
+                <img src="./src/img-logo/other/main-logo.png" class="logo" />
+            </a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="">
+                    <a href="https://www.syzygycare.com/">Home</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Service <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="https://www.syzygycare.com/caregiver-service">Caregiver Services</a>
+                        </li>
+                        <li>
+                            <a href="https://www.syzygycare.com/hire-nurse">Hire Nurese</a>
+                        </li>
+                        <li>
+                            <a href="https://www.syzygycare.com/doctor-consultations">Hire Doctor</a>
+                        </li>
+                        <li>
+                            <a href="https://www.syzygycare.com/elder-care">Elder Care</a>
+                        </li>
+                        <!-- <li class="dropdown-submenu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Submenu</a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#">Erfahrungsberichte</a>
+                                </li>
+                                <li>
+                                    <a href="#">Europäische Kooperationspartner</a>
+                                </li>
+                            </ul>
+                        </li> -->
+                        
+                    </ul>
+                </li>
+                <li>
+                    <a href="https://www.syzygycare.com/blood-donation-centre">Blood Helper</a>
+                </li>
+                <li>
+                    <a href="https://www.syzygycare.com/register-agency">Agency</a>
+                </li>
+                <li><a href="https://www.syzygycare.com/contact">Contact us</a></li>
+                <li><a  href="https://www.syzygycare.com/ratelist">Hire Charge</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <img src="https://www.syzygycare.com/website/icon/call_icon.png">18008913314 
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="tel:18008913314">18008913314 <br>
+                            <span>(India)</span></a>
+                        </li>
+                        <li>
+                            <a href="tel:+1(855)2181814">+1(855)2181814 <br><span>(Outside India)</span></a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>  <!--/header-->
+<section>
+    
+    <div class="top-banner">
+        <div class="custom-carousel-wrapper">
+            <div class="overlay"></div>
+            
+            <div class="carousel-item banner">
+                <img src="./src/img-logo/other/caregiver_home.jpg" style="width: 100%">
+                <div class="overlay-left"></div>
+                <div class="top_heading">
+                    <div class="text-overlay-top"></div>
+                    <h1 class="top_title">
+                        Hire a Caregiver for Your Loved One
+                    </h1>
+                    <label class="top_subtitle">Choose Caregiver Category and Price</label>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
 
-</html>
+<section>
+    <div class="category-container">
+        <div class="offers-wrapper clearfix max-width">
+            <div class="offers-slick">
+                <div class="indiv-offer">
+                    
+                    <a class="content-wrapper event-elem">
+                        <div class="img-holder">
+                            <img src="./src/img-logo/other/helth_tips.jpg" />
+                        </div>
+                        <div class="content-holder">
+                            <h4 class="heading">Health Tips</h4>
+                            <label class="info-lab">How to Living Healthier, Managing Physical and Mental Conditions</label>
+                        </div>
+                    </a>
+                    
+                </div>
+                <div class="indiv-offer">
+                    
+                    <a class="content-wrapper event-elem">
+                        <div class="img-holder">
+                            <img src="./src/img-logo/other/secure.jpg" />
+                        </div>
+                        <div class="content-holder">
+                            <h4 class="heading">Hire Later</h4>
+                            <label class="info-lab">Select Date-Time, your location and Confirm Your Hiring</label>
+                        </div>
+                    </a>
+                    
+                </div>
+                <div class="indiv-offer">
+                    
+                    <a class="content-wrapper event-elem">
+                        <div class="img-holder">
+                            <img src="https://www.syzygycare.com/websitebackground-size: 100% auto;/icon/emergency_contact.jpg" height="25" />
+                        </div>
+                        <div class="content-holder">
+                            <h4 class="heading">Emergency Contact </h4>
+                            <label class="info-lab">Add Emergency Contact of Your Doctor, Nearest Hospital or any family member</label>
+                        </div>
+                    </a>
+                    
+                </div>
+                <div class="indiv-offer">
+                    
+                    <a class="content-wrapper event-elem">
+                        <div class="img-holder">
+                            <img src="./src/img-logo/other/someone.jpg" />
+                        </div>
+                        <div class="content-holder">
+                            <h4 class="heading">Hire Caregiver for Some One</h4>
+                            <label class="info-lab">Add details and Hire a Caregiver for Your Loved One </label>
+                        </div>
+                    </a>
+                    
+                </div>
+            </div>
+            <button type="button" class="prev-btn offer-prev-btn">Prev</button>
+            <button typpe="button" class="next-btn offer-next-btn">Next</button>
+        </div>
+        <div class="empty-space"></div>
+    </div>
+</section>
+
+<section>
+    <div class="service-info">
+        <div class="section-container max-width">
+            <h2 class="section-heading">
+               Home Health Care Available for every time
+            </h2>
+            <label class="section-sub-heading">
+               iHomCare offers Caregiver(Doctor, Nurse, Physiotherapist, Personal Health Trainer, Yoga & Meditation) at per visit and hourly package, and also offer  Ambulance Services at minimum charges plus per kilometer
+            </label>
+            <div class="card-list-container clearfix">
+                <div class="card-holder">
+                    <a href="#">
+                        <div class="indiv-card">
+                            <div class="img-holder">
+                                <div class="type-1 share-img" style="background-image: url(./src/img-logo/other/caretaker_life.jpg">
+                                </div>
+                                <div class="overlay"></div>
+                                <div class="share-type">
+                                    <img src="./src/img-logo/other/caregiver.png" />
+                                </div>
+                            </div>
+                            <div class="info-container">
+                                <h2 class="heading">Caregiver</h2>
+                                <p class="comm-info">
+                                    The perfect way to care of your loved one at your home. Caregiver available 24x7 and you can hire and caring your loved one in an instant.  With hires starting from as low as Rs 20/Hr, you can choose from wide range of option!  You can also opt to do your bit for the humanity with iHomCare Services.
+
+                                    <ul class="comm-info-point">
+                                    	<li>Documents Verified</li>
+                                    	<li>Experienced</li>
+                                    	<li>Skilled & Trained</li>
+                                    	<li>Profiled Verified</li>
+                                        <li>Cashless Hires</li>
+                                    </ul>
+                                </p>
+                                <div class="benifits-list">
+                                </div>
+                            </div>
+                            <a href="" class="action-btn hide">
+
+                            </a>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-holder">
+                    <a href="#">
+                        <div class="indiv-card">
+                            <div class="img-holder">
+                                <div class="type-2 share-img" style="background-image: url(https://www.syzygycare.com/website/img/new_ambulance.jpg">
+                                </div>
+                                <div class="overlay"></div>
+                                <div class="share-type">
+                                    <img src="./src/img-logo/other/basic_ambulance.png"/>
+                                </div>
+                            </div>
+                            <div class="info-container">
+                                <h2 class="heading">Ambulance</h2>
+                                <p class="comm-info">
+                                    On-demand Home Health Services based on real-time tracking technology is our core service, and the app that connects ambulance driver-partners and patients is what makes it all possible. Ambulance available 24x7 you can book for loved one in case of medical emergency. With hires starting from minimum cost , you can choose wide range of option as per your medical need.
+                                    <ul class="comm-info-point">
+                                    	<li> AC/Non AC Ambulance </li>
+                                    	<li> Document Verified Driver</li>
+                                    	<li> Cashless Hires</li>
+                                    	<li> Instant Available</li>
+                                    </ul>
+                                </p>
+                                <div class="benifits-list">
+                                   
+                                </div>
+                            </div>
+                            <a href="" class="action-btn hide">
+
+                            </a>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="section-container why-care max-width">
+        <h2 class="section-heading">Why Hire with iHomCare?</h2>
+        <label class="section-sub-heading">
+            The best way to care at home for your loved one
+        </label>
+        <div class="item-list-wrapper clearfix">
+            <div class="wd-50">
+                
+                <a target="_blank" class="indiv-item-list event-elem" >
+                    <div class="wd-30">
+                        <div class="img-holder">
+                            <img src="./src/img-logo/other/cargiver_pocket.jpg" />
+                        </div>
+                    </div>
+                    <div class="wd-70">
+                        <h4 class="heading">
+                            Caregiver for every pocket
+                        </h4>
+                        <p class="info">
+                           Home Health Care Professional  every time your near by. We have caregiver to suit every pocket
+                        </p>
+                    </div>
+                    <div class="clearfix"></div>
+                </a>
+                
+                <a target="_blank" class="indiv-item-list event-elem">
+                    <div class="wd-30">
+                        <div class="img-holder">
+                            <img src="./src/img-logo/other/secure.jpg" />
+                        </div>
+                    </div>
+                    <div class="wd-70">
+                        <h4 class="heading">
+                            Secure and Safer Hire
+                        </h4>
+                        <p class="info">
+                            Verified caregiver and ambulance driver, an emergency contact button and live hire tracking are some features we have in place to ensure you a safe hire experience
+                        </p>
+                    </div>
+                    <div class="clearfix"></div>
+                </a>
+            </div>
+            <div class="wd-50">
+                
+                    <a  target="_blank" class="indiv-item-list event-elem">
+                        <div class="wd-30">
+                            <div class="img-holder">
+                                <img src="./src/img-logo/other/refer&earn.jpg" width="" />
+                            </div>
+                        </div>
+                        <div class="wd-70">
+                            <h4 class="heading">
+                                Refer and Earn
+                            </h4>
+                            <p class="info">
+                                You can refer your friend, family member or any one and got a certain amount in wallet which is used at hiring.
+                            </p>
+                        </div>
+                        <div class="clearfix"></div>
+                    </a>
+                    <a target="_blank" class="indiv-item-list event-elem">
+                        <div class="wd-30">
+                            <div class="img-holder">
+                                <img src="./src/img-logo/other/hire_cashless.png" />
+                            </div>
+                        </div>
+                        <div class="wd-70">
+                            <h4 class="heading">
+                                Cashless Hire
+                            </h4>
+                            <p class="info">
+                                Now go cashless and care easy. Simply recharge your iHomCare Wallet and enjoy hassle free payments.
+                            </p>
+                        </div>
+                        <div class="clearfix"></div>
+                    </a>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</section>
+
+<!---->
+
+<section> 
+    <div class="section-container care-fleet max-width">
+        <h2 class="section-heading">Meet Our Awesome Caregiver</h2>
+        <label class="section-sub-heading">
+            The Category of Caregiver to choose from
+        </label>
+        <div class="care-fleet-options outstation-fleet" id="awesome-fleet">
+            <div class="slider-nav">
+                
+                    <div class="indiv-fleet" data-tab="fleet-auto">
+                        <div class="img-holder">
+                            <img src="https://www.syzygycare.com/website/new_images/nurse.png" class="care-fleet-icon" />
+                            <img src="https://www.syzygycare.com/website/new_images/nurse.png" class="care-fleet-icon-active" />
+                        </div>
+                        <label>Nurse</label>
+                        <div class="triangle-up">
+                            <img src="https://www.syzygycare.com/website/new_images/triangle-up-active.svg" />
+                        </div>
+                    </div>
+                    <div class="indiv-fleet" data-tab="fleet-bike">
+                        <div class="img-holder">
+                            <img src="https://www.syzygycare.com/website/new_images/nurse_assistant.png" class="care-fleet-icon"/>
+                            <img src="https://www.syzygycare.com/website/new_images/nurse_assistant.png" class="care-fleet-icon-active"/>
+                        </div>
+                        <label>Nurse Assistant</label>
+                        <div class="triangle-up">
+                            <img src="https://www.syzygycare.com/website/new_images/triangle-up-active.svg" />
+                        </div>
+                    </div>
+                    <div class="indiv-fleet" data-tab="fleet-share">
+                        <div class="img-holder">
+                            <img src="https://www.syzygycare.com/website/new_images/care_taker.png" class="care-fleet-icon"/>
+                            <img src="https://www.syzygycare.com/website/new_images/care_taker.png" class="care-fleet-icon-active"/>
+                        </div>
+                        <label>CareTaker</label>
+                        <div class="triangle-up">
+                            <img src="https://www.syzygycare.com/website/new_images/triangle-up-active.svg" />
+                        </div>
+                    </div>
+                    <div class="indiv-fleet" data-tab="fleet-micro">
+                        <div class="img-holder">
+                            <img src="https://www.syzygycare.com/website/new_images/doctor.png" class="care-fleet-icon"/>
+                            <img src="https://www.syzygycare.com/website/new_images/doctor.png" class="care-fleet-icon-active"/>
+                        </div>
+                        <label>Doctor</label>
+                        <div class="triangle-up">
+                            <img src="https://www.syzygycare.com/website/new_images/triangle-up-active.svg" />
+                        </div>
+                    </div>
+                
+                <div class="indiv-fleet" data-tab="fleet-mini">
+                    <div class="img-holder">
+                        <img src="https://www.syzygycare.com/website/new_images/ayush_doctor.png"/>
+                        <img src="https://www.syzygycare.com/website/new_images/ayush_doctor.png" class="care-fleet-icon-active"/>
+                    </div>
+                    <label>Ayush Doctor</label>
+                    <div class="triangle-up">
+                        <img src="https://www.syzygycare.com/website/new_images/triangle-up-active.svg" />
+                    </div>
+                </div>
+                <div class="indiv-fleet" data-tab="fleet-prime-sedan">
+                    <div class="img-holder">
+                        <img src="https://www.syzygycare.com/website/new_images/physotherapist.png" class="care-fleet-icon"/>
+                        <img src="https://www.syzygycare.com/website/new_images/physotherapist.png" class="care-fleet-icon-active"/>
+                    </div>
+                    <label>Physiotherapist</label>
+                    <div class="triangle-up">
+                        <img src="https://www.syzygycare.com/website/new_images/triangle-up-active.svg" />
+                    </div>
+                </div>
+                <div class="indiv-fleet" data-tab="fleet-prime-play">
+                    <div class="img-holder">
+                        <img src="https://www.syzygycare.com/website/new_images/health_trainer.png"/>
+                        <img src="https://www.syzygycare.com/website/new_images/health_trainer.png" class="care-fleet-icon-active"/>
+                    </div>
+                    <label>Health Trainer</label>
+                    <div class="triangle-up">
+                        <img src="https://www.syzygycare.com/website/new_images/triangle-up-active.svg" />
+                    </div>
+                </div>
+                <div class="indiv-fleet" data-tab="yoga">
+                    <div class="img-holder">
+                        <img src="https://www.syzygycare.com/website/new_images/yoga.png"/>
+                        <img src="https://www.syzygycare.com/website/new_images/yoga.png"/>
+                    </div>
+                    <label>Yoga & Meditation</label>
+                    <div class="triangle-up">
+                        <img src="https://www.syzygycare.com/website/new_images/triangle-up-active.svg" />
+                    </div>
+                </div>
+                <div class="indiv-fleet" data-tab="fleet-prime-suv">
+                    <div class="img-holder">
+                        <img src="https://www.syzygycare.com/website/new_images/dietician.png"/>
+                        <img src="https://www.syzygycare.com/website/new_images/dietician.png"/>
+                    </div>
+                    <label>Dietician</label>
+                    <div class="triangle-up">
+                        <img src="https://www.syzygycare.com/website/new_images/triangle-up-active.svg" />
+                    </div>
+                </div>
+                
+            </div>
+            <button type="button" class="prev-btn-nav">Prev</button>
+            <button typpe="button" class="next-btn-nav">Next</button>
+        </div>
+    </div>
+    <!-- slick -->
+    <div class="fleet-tab-content">
+        <div class="max-width fleet-tab-wrapper">
+            <div class="fleet-indiv-list slider-for">
+                
+                    <div class="single-content" id="fleet-auto">
+                        <div class="ft-comm-content">
+                            <div class="wd-60 left-content">
+                                <img src="./src/img-logo/other/nurse-get.png" class="position-1" />
+                            </div>
+                            <div class="wd-40">
+                                <div class="right-content">
+                                    <h4 class="heading">Nurse</h4>
+                                    <div class="sub-title">Get nurse at your doorstep</div>
+                                    <div class="info">
+                                    	<ul>
+                                    	<li>• Administering Medicine</li>
+                                    	<li>• Managing Intravenous Line</li>
+                                    	<li>• Observing & Monitoring Patients’ Conditions</li>
+                                    	<li>• Administering Medicine</li>
+                                    	<li>• Communicating with Consultant</li>
+                                    	<!-- <li>• Emotional support to Patient & Family Members</li> -->
+                                    	<li>• Help to Patient & Family Member how to self administer medications & complete other self care task  </li>
+                                    	</ul>
+                            
+
+                                        
+                                    </div>
+                                <button class="btn btn-success pull-right request">Request Here</button>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="single-content" id="fleet-bike">
+                        <div class="ft-comm-content">
+                            <div class="wd-60 left-content">
+                                <img src="./src/img-logo/other/nurse_assistant.png" class=""/>
+                            </div>
+                            <div class="wd-40">
+                                <div class="right-content">
+                                    <h4 class="heading">Nurse Assistant</h4>
+                                    <div class="sub-title">On Time, Every time.</div>  
+                                    <div class="info">
+                                    	<ul>
+                                    		<li>• Bath and dress patients</li>
+                                    		<li>• Serve meals and help patients eat</li>
+                                    		<li>• Take vital signs</li>
+                                    		<li>• Turn or reposition patients who are bedridden</li>
+                                    		<li>• Provide and empty bedpans</li>
+                                    		<li>• Lift patients into beds, wheelchairs</li>
+                                    		<li>• Answer patient calls</li>
+                                    	</ul>
+                                    </div>
+                                   <button class="btn btn-success pull-right request">Request Here</button> 
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="single-content" id="fleet-share">
+                        <div class="ft-comm-content">
+                            <div class="wd-60 left-content">
+                                <img src="./src/img-logo/other/care_taker.png" class="position-10"/>
+                            </div>
+                            <div class="wd-40">
+                                <div class="right-content">
+                                    <h4 class="heading">CareTaker</h4>
+                                    <div class="sub-title">Eco-friendly rides at pocket-friendly rates</div>
+                                    <div class="info">
+                                    	<ul>
+                                    		<li>• Toiletries Assistant</li>
+                                    		<li>• Sponging & Bathing</li>
+                                    		<li>• After Sponging & Bath Body and hair oiling</li>
+                                    		<li>• Care of Food & Feeding</li>
+                                    		<li>• After Sponging & Bath Body and hair oiling</li>
+                                    		<!-- <li>• Hygiene and Routing Care</li> -->
+                                    		<!-- <li>• Bed Making and cleaning of living room</li> -->
+                                    		<li>• Transportation / Movement of Elder Person</li>
+                                    		<!-- <li>• Emotional Support to Elder Person & Family Member</li> -->
+                                    		<!--li>• Assist in Physiotherapy/Routine Exercise/Body Part Movement</li-->
+                                    	</ul>
+                                    </div>
+                                </div>
+                                <button class="btn btn-success pull-right request">Request Here</button>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="single-content" id="fleet-micro">
+                        <div class="ft-comm-content">
+                            <div class="wd-60 left-content">
+                                <img src="./src/img-logo/other/doctor.png" class="position-4"/>
+                            </div>
+                            <div class="wd-40">
+                                <div class="right-content">
+                                    <h4 class="heading">Doctor</h4>
+                                    <div class="sub-title">• Clinical Care</div>
+                                    <div class="sub-title">• Symptom Diagnosis</div>
+                                    <div class="sub-title">• Medicine Prescription</div>
+                                    <div class="info">
+                                    </div>
+                                  
+                                </div>
+                                <button class="btn btn-success pull-right request">Request Here</button>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                
+                <div class="single-content" id="fleet-mini">
+                    <div class="ft-comm-content">
+                        <div class="wd-60 left-content">
+                            <img src="./src/img-logo/other/ayush_doctor.png" class="position-5"/>
+                        </div>
+                        <div class="wd-40">
+                            <div class="right-content">
+                                <h4 class="heading">Ayush Doctor</h4>
+                                <div class="sub-title"></div>
+                                <div class="info">
+                                    Ayush Doctor provide treatment or care as per Indian System of Medicine(it include six system of Ayurveda, Yoga and Naturopathy, Unani, Siddha, and Homeopathy)
+                                </div>
+                                
+                            </div>
+                            <button class="btn btn-success pull-right request">Request Here</button>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <div class="single-content" id="fleet-prime-sedan">
+                    <div class="ft-comm-content">
+                        <div class="wd-60 left-content">
+                            <img src="./src/img-logo/other/physotherapist.png" class="position-6"/>
+                        </div>
+                        <div class="wd-40">
+                            <div class="right-content">
+                                <h4 class="heading">Physiotherapist</h4>
+                                <div class="sub-title"></div>
+                                <div class="info">
+                                	<ul>
+                                		<li>• Diagnose, assess and treat their physical problem/condition</li>
+                                		<li>• Helping patients recover from accident, illness or injury</li>
+                                		<li>• Organizing therapeutic physical exercise sessions</li>
+                                		<!-- <li>• Liaising with professionals such as doctors and nurses</li> -->
+                                		<li>• Liaising with professionals such as doctors and nurses</li>
+                                		<li>• Collecting statistics, writing reports</li>
+                                	</ul>
+                                    
+                                </div>
+                            </div>
+                            <button class="btn btn-success pull-right request">Request Here</button>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <div class="single-content" id="fleet-prime-play">
+                    <div class="ft-comm-content">
+                        <div class="wd-60 left-content">
+                            <img src="./src/img-logo/other/health_trainer.png" class="position-7"/>
+                        </div>
+                        <div class="wd-40">
+                            <div class="right-content">
+                                <h4 class="heading">Personal Health Trainer</h4>
+                                <div class="sub-title">Enjoy music, radio, videos on the go</div>
+                                <div class="info">
+                                	<ul>
+                                		<li>• Demonstrating exercises and routines to clients</li>
+                                		<li>• Assisting clients in exercises to minimize injury and promote fitness</li>
+                                		<li>• Providing information or resources on general fitness and health issues</li>
+                                		<li>• Providing emergency first aid if necessary</li>
+                                	</ul>
+                                </div>
+                            </div>
+                            <button class="btn btn-success pull-right request">Request Here</button>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <div class="single-content" id="yog">
+                    <div class="ft-comm-content">
+                        <div class="wd-60 left-content">
+                            <img src="./src/img-logo/other/yoga_2.png" class="position-9"/>
+                        </div>
+                        <div class="wd-40">
+                            <div class="right-content">
+                                <h4 class="heading">Yoga & Meditation</h4>
+                                <div class="sub-title"></div>
+                                <div class="info">
+                                    <ul>
+                                        <li>• To  create a safe and nurturing environment  at home for the patient</li>
+                                        <li>• To Demonstrate  and guide  the Patient  through a series of poses in a safe and understandable way</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <button class="btn btn-success pull-right request">Request Here</button>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <div class="single-content" id="fleet-prime-suv">
+                    <div class="ft-comm-content">
+                        <div class="wd-60 left-content">
+                            <img src="./src/img-logo/other/dietician.png" class="position-9"/>
+                        </div>
+                        <div class="wd-40">
+                            <div class="right-content">
+                                <h4 class="heading">Dietician</h4>
+                                <div class="sub-title"></div>
+                                <div class="info">
+                                	<ul>
+                                		<li>• Assess patients’ and clients’ health needs and diet</li>
+                                		<li>• Counsel patients on nutrition issues and healthy eating habits</li>
+                                		<li>• Develop meal plans, taking both cost and clients’ preferences into account</li>
+                                		<li>• Evaluate the effects of meal plans and change the plans as needed</li>
+                                		<li>• Keep up with the latest nutritional science research</li>
+                                	</ul>
+                                </div>
+                            </div>
+                            <button class="btn btn-success pull-right request">Request Here</button>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="prev-btn">Prev</button>
+            <button typpe="button" class="next-btn">Next</button>
+        </div>
+    </div>
+    <!-- End slick -->
+</section>
+<!---->
+
+
+
+<section>
+    <div class="download-app">
+        <div class="max-width app-content">
+            <div class="wd-50 right text-center">
+            <img src="./src/img-logo/other/app_image.jpg" class="booking-img">
+            </div>
+            <div class="wd-50 left">
+                <div class="section-container download-content">
+                    <h2 class="section-heading">Hire Caregiver (Doctor, Nurse, CareTaker) or an Ambulance from the App</h2>
+                    <p class="info">
+                        Download the app for exclusive deals and ease of hiring
+                    </p>
+                    <div class="download-link-wrapper">
+                        <a href="https://play.google.com/store/apps/details?id=com.dollop.syzygy&hl=en" target="_blank" class="download-link">
+                            <img src="./src/img-logo/other/googlePlay.png"/>
+                        </a>
+                        <a href="#" target="_blank" class="download-link">
+                            <img src="./src/img-logo/other/appStore.png" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</section> 
+
+<section>
+    <div class="care-features">
+        <div class="features-wrapper clearfix max-width">
+            <div class="indiv-feature">
+                <img src="./src/img-logo/other/customer_support.png" class="feature-img" />
+                <div class="feature-content">
+                    <h2 class="heading">Customer Support</h2>
+                    <p class="info">
+                        A dedicated no to customer <br> support always at your <br> service to help solve any problem.
+                    </p>
+                </div>
+            </div>
+            <div class="indiv-feature">
+                <img src="./src/img-logo/other/safety_first.png" class="feature-img" />
+                <div class="feature-content">
+                    <h2 class="heading">Your Safety First</h2>
+                    <p class="info">
+                        Keep your loved ones informed<br>
+                        about your travel hiring  or call<br>
+                        emergency services when in need
+                    </p>
+                </div>
+            </div>
+            <div class="indiv-feature">
+                <img src="./src/img-logo/other/top_rated.png" class="feature-img" />
+                <div class="feature-content">
+                    <h2 class="heading">Top Rated Caregiver and Ambulance-Partner</h2>
+                    <p class="info">
+                    Our caregiver and ambulance-partner are <br>background verified and trained to<br> deliver services only the best experience
+                        
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <footer class="footer-v2">  <!--footer-->
+        <div class="max-width">
+            <div class="footer">
+                
+                    <!--<div class="row main-links clearfix top-cities">-->
+                        <!--<div class="title">Popular Airports</div>-->
+                        <!---->
+                            <!--<a href="" class="pull-left"></a>-->
+                        <!---->
+                    <!--</div>-->
+                
+                
+                    <!-- <div class="row main-links clearfix top-cities"> 
+                        <div class="title">Top Visited Cities</div>
+                        
+                    </div>-->
+
+                <div class="row main-links clearfix">
+                    <div class="title">Popular Services</div>
+                    <a id="desktop_footer_about_us" class="event-elem pull-left" href="https://www.syzygycare.com/request/ca">Elderly Care@Home</a>
+                    <a id="desktop_footer_careers" class="event-elem pull-left" href="https://www.syzygycare.com/request/ca">Patient Care@Home</a>
+                    <a href="https://www.syzygycare.com/request/ca" class="pull-left">Nursing Care@Home</a>
+                    <a href="https://www.syzygycare.com/request/ca" class="pull-left">Hiring Request</a>
+                </div>
+                
+                <div class="row social">
+                    <div class="title">Social Links</div>
+                    <a href="https://www.facebook.com/iHomCare/" target="_blank"><img src="https://www.syzygycare.com/website/img/fb_icon.svg" width="32"></a>
+                    <a href="https://twitter.com/iHomCare" target="_blank"><img src="https://www.syzygycare.com/website/img/twitter_icon.svg" width="34"></a>
+                    <a href="https://www.linkedin.com/company/ihomcare/" target="_blank"><img src="./src/img-logo/other/linkden1.png"></a>
+                    <a href="https://www.instagram.com/ihom_care/" target="_blank"><img src="https://www.syzygycare.com/website/img/instagram_icon.svg"></a>
+                    <a href=" https://www.youtube.com/@ihomcare1066" target="_blank"><img src="https://www.syzygycare.com/website/img/youtube_icon.svg"></a>
+                </div>  
+                <div class="row lists clearfix">
+                    <div class="title">
+                        Discover iHomCare
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                <a class="event-elem" href="https://www.syzygycare.com/about">About Us</a>
+                            </li>
+                            
+                            <li>
+                                <a class="event-elem" href="https://www.syzygycare.com/careers">Careers</a>
+                            </li>
+                            
+                            <li>
+                                <a class="event-elem" href="https://www.syzygycare.com/contact">Contact Us</a>
+                            </li>
+                            <li>
+                                <a class="event-elem" href="https://www.syzygycare.com/offers">Offers</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a class="event-elem" href="https://www.syzygycare.com/register-agency">Become a Business Partner(Agency)
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a class="event-elem" href="https://www.syzygycare.com/page/enquiry_form?page=caregiver">Become a Caregiver Partner</a>
+                            </li>
+                            <li>
+                                <a class="event-elem" href="https://www.syzygycare.com/page/enquiry_form?page=ambulance">Become an Ambulance Partner</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </div>             
+                <div class="row tc-links clearfix">
+                    <div class="logo-container"><a href="https://www.syzygycare.com/"><img src="./src/img-logo/other/logo_512.png"></a></div>
+                    <a href="https://www.syzygycare.com/page/privacy">Privacy Policy</a>
+                    <a id="desktop_footer_tnc" class="event-elem" href="https://www.syzygycare.com/page/term_condition">Terms &amp; Conditions</a>
+                    <a href="https://www.syzygycare.com/page/disclaimer">Disclaimer</a>
+                    <div class="copyrights">Copyright © 2023 syzygycare</div>
+                </div>
+            </div>
+        </div>
+    </footer> <!--/footer-->
+
+<div class="body-overlay overlay-hide">
+</div>
+
+<script src="https://www.syzygycare.com/website/slick.js"></script>
+<script src="https://www.syzygycare.com/website/landing.js"></script>
+<script>
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+    
+</script>
+
+</body>
+</html><script>
+    $(document).ready(function(){
+        var caregiver_types=1;
+         jQuery.ajax({
+          type: "POST",
+          url: "https://www.syzygycare.com/careApp/index.php/webservice/Check_list/getCaregiverServices_web",
+          dataType: 'text',
+          data: {caregiver_types: caregiver_types},
+          success: function(responce) {     
+            $("#service_category").html(responce);
+            // console.log(responce);
+          }
+        });
+        $('.request').on('click',function(){   
+            //alert('hii');         
+            window.location.href="https://syzygycare.com/request/hire-personal-caregiver";
+        });
+    });
+</script>
+
+
+<style>
+.appPopBody {
+    float: left;
+    width: 100%;
+    background-color: #fff;
+    padding: 10px;
+    display: none;
+    position: relative;
+}
+
+
+.appPopDesc, .appPopHead, .apprating {
+    width: 58%;
+    float: left;
+}
+</style>
+<script type="text/javascript">
+    $('form').submit(function () {
+        // Get the Login Name value and trim it
+        var contact = $.trim($('#phone').val());
+        // Check if empty of not
+        if (contact.length!=10) {
+            alert('Mobile number should be 10 digit');
+            return false;
+        }
+        
+    });
+</script>
